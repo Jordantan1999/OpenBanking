@@ -15,3 +15,8 @@ Visit https://github.com/Jordantan1999/OpenBanking/issues
 
 ## Want to contribute?
 Visit https://github.com/Jordantan1999/OpenBanking/pulls
+
+## License & Copyright
+Copyright (c) 2022 Tan Jun Wen
+
+Licensed under the MIT License
