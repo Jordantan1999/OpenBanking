@@ -1,26 +1,29 @@
+server:
+  port: 9000
+    
 zuul:
   routes:
-    transaction:
-      service-id: TransactionService
-      path: /transaction/**
-      strip-prefix: 'false'
     account:
-      strip-prefix: 'false'
-      service-id: AccountService
       path: /account/**
+      service-id: AccountService
+      strip-prefix: false
     customer:
-      service-id: UserService
       path: /customer/**
-      strip-prefix: 'false'
-ribbon:
-  ConnectTimeout: '10000'
-  ReadTimeout: '10000'
-server:
-  port: '9000'
+      service-id: UserService
+      strip-prefix: false
+    transaction:
+      path: /transaction/**
+      service-id: TransactionService
+      strip-prefix: false
+      
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: '11000'
+            timeoutInMilliseconds: 11000
+
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000

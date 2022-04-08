@@ -7,6 +7,8 @@ Lorem Ipsum
 - Spring Cloud
 - Spring Security
 - Spring Web
+- Spring Data JPA
+- Lombok
 
 ## Any Issue? 
 Visit https://github.com/Jordantan1999/OpenBanking/issues
