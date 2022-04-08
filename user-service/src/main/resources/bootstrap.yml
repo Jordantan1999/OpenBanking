@@ -1,0 +1,13 @@
+spring:
+  application: 
+    name: UserService
+  cloud:
+    config:
+      uri: http://localhost:1111
+      failFast: true
+#  config:
+#    import: optional:configserver:http://localhost:1111
+
+server:  port: 8400
+
+management:  endpoints:    web:      exposure:        include: "*"
