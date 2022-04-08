@@ -9,9 +9,4 @@
 
 rootProject.name = "OpenBanking"
 
-include ("eureka")
-include ("account")
-include ("config-server")
-include ("transaction")
-include ("user")
-include ("zuul-gateway")
+include ("eureka","account","config-server","transaction","user","zuul-gateway")
