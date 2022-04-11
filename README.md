@@ -9,6 +9,7 @@ Lorem Ipsum
 - Spring Web
 - Spring Data JPA
 - Lombok
+- Jersey
 
 ## Any Issue? 
 Visit https://github.com/Jordantan1999/OpenBanking/issues

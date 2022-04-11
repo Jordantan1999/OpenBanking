@@ -9,6 +9,7 @@ plugins {
 
 repositories {
     mavenLocal()
+	mavenCentral()
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
@@ -17,6 +18,7 @@ repositories {
 dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.2.0.RELEASE")
     implementation("com.sun.jersey.contribs:jersey-apache-client4:1.19.4")
+	implementation("pl.allegro.tech.build:axion-release-plugin:1.13.6")
     testImplementation("org.springframework.boot:spring-boot-starter-test:2.3.9.RELEASE")
 }
 

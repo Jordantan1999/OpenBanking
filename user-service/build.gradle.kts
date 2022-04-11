@@ -9,6 +9,7 @@ plugins {
 
 repositories {
     mavenLocal()
+	mavenCentral()
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
@@ -26,6 +27,7 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.2.0.RELEASE")
     implementation("io.springfox:springfox-swagger2:2.9.2")
     implementation("io.springfox:springfox-swagger-ui:2.9.2")
+	implementation("pl.allegro.tech.build:axion-release-plugin:1.13.6")
     compileOnly("org.projectlombok:lombok:1.18.22")
 	annotationProcessor("org.projectlombok:lombok:1.18.22")
 	testCompileOnly("org.projectlombok:lombok:1.18.22")

@@ -9,6 +9,7 @@ plugins {
 
 repositories {
     mavenLocal()
+	mavenCentral()
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
@@ -16,6 +17,7 @@ repositories {
 
 dependencies {
     implementation("org.springframework.cloud:spring-cloud-config-server:2.2.8.RELEASE")
+	implementation("pl.allegro.tech.build:axion-release-plugin:1.13.6")
     testImplementation("org.springframework.boot:spring-boot-starter-test:2.3.9.RELEASE")
 }
 
