@@ -5,7 +5,17 @@
 plugins {
     java
     `maven-publish`
+ id("org.springframework.boot") version "2.6.6"
+  id("io.spring.dependency-management") version "1.0.11.RELEASE"
+  kotlin("jvm") version "1.6.10"
+  kotlin("plugin.spring") version "1.6.10"
+  kotlin("plugin.jpa") version "1.6.10"
 }
+
+group = "com.bank.zuul"
+version = "0.0.1-SNAPSHOT"
+description = "zuul-gateway"
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenLocal()
@@ -15,18 +25,22 @@ repositories {
     }
 }
 
+extra["springCloudVersion"] = "2021.0.1"
+
 dependencies {
-    implementation("org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.2.0.RELEASE")
-    implementation("org.springframework.cloud:spring-cloud-starter-config:2.2.0.RELEASE")
-    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.2.0.RELEASE")
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.2.10.RELEASE")
+    implementation("org.springframework.cloud:spring-cloud-starter-config:3.1.1")
+implementation("org.springframework.cloud:spring-cloud-starter-bootstrap:3.1.1")
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.1")
 	implementation("pl.allegro.tech.build:axion-release-plugin:1.13.6")
-    testImplementation("org.springframework.boot:spring-boot-starter-test:2.3.9.RELEASE")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.6")
 }
 
-group = "com.bank.zuul"
-version = "0.0.1-SNAPSHOT"
-description = "zuul-gateway"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+dependencyManagement {
+  imports {
+    mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+  }
+}
 
 publishing {
     publications.create<MavenPublication>("maven") {

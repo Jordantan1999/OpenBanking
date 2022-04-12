@@ -5,7 +5,17 @@
 plugins {
     java
     `maven-publish`
+ id("org.springframework.boot") version "2.6.6"
+  id("io.spring.dependency-management") version "1.0.11.RELEASE"
+  kotlin("jvm") version "1.6.10"
+  kotlin("plugin.spring") version "1.6.10"
+  kotlin("plugin.jpa") version "1.6.10"
 }
+
+group = "com.bank"
+version = "0.0.1-SNAPSHOT"
+description = "transaction"
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenLocal()
@@ -15,16 +25,19 @@ repositories {
     }
 }
 
+extra["springCloudVersion"] = "2021.0.1"
+
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.3.9.RELEASE")
-    implementation("org.springframework.boot:spring-boot-starter-validation:2.3.9.RELEASE")
-    implementation("org.springframework.boot:spring-boot-starter-actuator:2.3.9.RELEASE")
-    implementation("org.springframework.boot:spring-boot-starter-web:2.3.9.RELEASE")
-    implementation("org.springframework.cloud:spring-cloud-starter-config:2.2.0.RELEASE")
-    implementation("org.springframework.cloud:spring-cloud-starter-sleuth:2.2.0.RELEASE")
-    implementation("org.springframework.cloud:spring-cloud-sleuth-zipkin:2.2.0.RELEASE")
-    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:2.2.0.RELEASE")
-    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.2.0.RELEASE")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.6.6")
+    implementation("org.springframework.boot:spring-boot-starter-validation:2.6.6")
+    implementation("org.springframework.boot:spring-boot-starter-actuator:2.6.6")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.6.6")
+    implementation("org.springframework.cloud:spring-cloud-starter-config:3.1.1")
+implementation("org.springframework.cloud:spring-cloud-starter-bootstrap:3.1.1")
+    implementation("org.springframework.cloud:spring-cloud-starter-sleuth:3.1.1")
+    implementation("org.springframework.cloud:spring-cloud-sleuth-zipkin:3.1.1")
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:3.1.1")
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.1")
     implementation("io.springfox:springfox-swagger2:2.9.2")
     implementation("io.springfox:springfox-swagger-ui:2.9.2")
 	implementation("pl.allegro.tech.build:axion-release-plugin:1.13.6")
@@ -33,13 +46,14 @@ dependencies {
 	testCompileOnly("org.projectlombok:lombok:1.18.22")
 	testAnnotationProcessor("org.projectlombok:lombok:1.18.22")
     runtimeOnly("mysql:mysql-connector-java:8.0.23")
-    testImplementation("org.springframework.boot:spring-boot-starter-test:2.3.9.RELEASE")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.6")
 }
 
-group = "com.bank"
-version = "0.0.1-SNAPSHOT"
-description = "transaction"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+dependencyManagement {
+  imports {
+    mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+  }
+}
 
 publishing {
     publications.create<MavenPublication>("maven") {
