@@ -1,8 +1,8 @@
 package com.jordantanjunwen.user.service;
 
-import com.bank.user.domain.Login;
-import com.bank.user.domain.User;
-import com.bank.user.exception.UserNotFoundException;
+import com.jordantanjunwen.user.domain.Login;
+import com.jordantanjunwen.user.domain.User;
+import com.jordantanjunwen.user.exception.UserNotFoundException;
 
 public interface LoginService {
 

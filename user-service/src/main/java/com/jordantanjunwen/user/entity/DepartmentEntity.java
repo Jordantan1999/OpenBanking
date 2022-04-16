@@ -11,8 +11,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.bank.user.domain.Department;
-import com.bank.user.domain.DepartmentType;
+import com.jordantanjunwen.user.domain.Department;
+import com.jordantanjunwen.user.domain.DepartmentType;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

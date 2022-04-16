@@ -7,7 +7,7 @@ import java.util.List;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import com.bank.transaction.entity.TransactionEntity;
+import com.jordantanjunwen.transaction.entity.TransactionEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bank.user.domain.Customer;
-import com.bank.user.domain.UserType;
-import com.bank.user.exception.UserNotFoundException;
-import com.bank.user.service.CustomerService;
-import com.bank.user.utility.ResponseObject;
+import com.jordantanjunwen.user.domain.Customer;
+import com.jordantanjunwen.user.domain.UserType;
+import com.jordantanjunwen.user.exception.UserNotFoundException;
+import com.jordantanjunwen.user.service.CustomerService;
+import com.jordantanjunwen.user.utility.ResponseObject;
 
 @RestController
 @RequestMapping("/customer")

@@ -2,8 +2,8 @@ package com.jordantanjunwen.user.service;
 
 import java.util.List;
 
-import com.bank.user.domain.Customer;
-import com.bank.user.exception.UserNotFoundException;
+import com.jordantanjunwen.user.domain.Customer;
+import com.jordantanjunwen.user.exception.UserNotFoundException;
 
 public interface CustomerService {
 

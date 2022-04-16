@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.validation.constraints.NotBlank;
 
-import com.bank.user.entity.DepartmentEntity;
+import com.jordantanjunwen.user.entity.DepartmentEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

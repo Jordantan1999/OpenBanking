@@ -3,14 +3,14 @@ package com.jordantanjunwen.user.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bank.user.domain.Login;
-import com.bank.user.domain.User;
-import com.bank.user.entity.CustomerEntity;
-import com.bank.user.entity.EmployeeEntity;
-import com.bank.user.exception.UserNotFoundException;
-import com.bank.user.repository.CustomerRepository;
-import com.bank.user.repository.EmployeeRepository;
-import com.bank.user.service.LoginService;
+import com.jordantanjunwen.user.domain.Login;
+import com.jordantanjunwen.user.domain.User;
+import com.jordantanjunwen.user.entity.CustomerEntity;
+import com.jordantanjunwen.user.entity.EmployeeEntity;
+import com.jordantanjunwen.user.exception.UserNotFoundException;
+import com.jordantanjunwen.user.repository.CustomerRepository;
+import com.jordantanjunwen.user.repository.EmployeeRepository;
+import com.jordantanjunwen.user.service.LoginService;
 
 @Service
 public class LoginServiceImpl implements LoginService

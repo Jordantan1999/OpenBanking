@@ -6,12 +6,12 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bank.account.domain.Account;
-import com.bank.account.domain.AccountType;
-import com.bank.account.entity.AccountEntity;
-import com.bank.account.exception.AccountNotFoundException;
-import com.bank.account.repository.AccountRepository;
-import com.bank.account.service.AccountService;
+import com.jordantanjunwen.account.domain.Account;
+import com.jordantanjunwen.account.domain.AccountType;
+import com.jordantanjunwen.account.entity.AccountEntity;
+import com.jordantanjunwen.account.exception.AccountNotFoundException;
+import com.jordantanjunwen.account.repository.AccountRepository;
+import com.jordantanjunwen.account.service.AccountService;
 
 @Service
 public class AccountServiceImpl implements AccountService {

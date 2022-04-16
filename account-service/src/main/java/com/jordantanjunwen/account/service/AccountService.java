@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.bank.account.domain.Account;
-import com.bank.account.exception.AccountNotFoundException;
+import com.jordantanjunwen.account.domain.Account;
+import com.jordantanjunwen.account.exception.AccountNotFoundException;
 
 @Service
 public interface AccountService {

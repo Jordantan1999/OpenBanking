@@ -13,9 +13,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.bank.user.domain.Account;
-import com.bank.user.domain.Employee;
-import com.bank.user.domain.User;
+import com.jordantanjunwen.user.domain.Account;
+import com.jordantanjunwen.user.domain.Employee;
+import com.jordantanjunwen.user.domain.User;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

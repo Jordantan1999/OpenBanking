@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.bank.account.entity.AccountEntity;
+import com.jordantanjunwen.account.entity.AccountEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

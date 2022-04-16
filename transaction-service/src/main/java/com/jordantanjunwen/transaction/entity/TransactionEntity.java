@@ -14,8 +14,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.bank.transaction.domain.TransactionStatus;
-import com.bank.transaction.domain.Transaction;
+import com.jordantanjunwen.transaction.domain.TransactionStatus;
+import com.jordantanjunwen.transaction.domain.Transaction;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

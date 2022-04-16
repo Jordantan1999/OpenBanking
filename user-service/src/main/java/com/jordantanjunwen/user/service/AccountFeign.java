@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.bank.user.domain.Account;
+import com.jordantanjunwen.user.domain.Account;
 
 @FeignClient("AccountService")
 public interface AccountFeign {

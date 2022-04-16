@@ -2,7 +2,7 @@ package com.jordantanjunwen.transaction.service;
 
 import java.util.List;
 
-import com.bank.transaction.domain.Transaction;
+import com.jordantanjunwen.transaction.domain.Transaction;
 
 public interface TransactionService {
 

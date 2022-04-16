@@ -10,12 +10,12 @@ import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.bank.transaction.domain.Transaction;
-import com.bank.transaction.domain.TransactionStatus;
-import com.bank.transaction.entity.TransactionEntity;
-import com.bank.transaction.repository.TransactionRepository;
-import com.bank.transaction.service.AccountFeign;
-import com.bank.transaction.service.TransactionService;
+import com.jordantanjunwen.transaction.domain.Transaction;
+import com.jordantanjunwen.transaction.domain.TransactionStatus;
+import com.jordantanjunwen.transaction.entity.TransactionEntity;
+import com.jordantanjunwen.transaction.repository.TransactionRepository;
+import com.jordantanjunwen.transaction.service.AccountFeign;
+import com.jordantanjunwen.transaction.service.TransactionService;
 
 import lombok.extern.slf4j.Slf4j;
 

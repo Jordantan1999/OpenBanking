@@ -11,7 +11,7 @@ import javax.validation.constraints.Past;
 import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Pattern;
 
-import com.bank.user.entity.CustomerEntity;
+import com.jordantanjunwen.user.entity.CustomerEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

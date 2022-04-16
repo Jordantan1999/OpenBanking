@@ -25,11 +25,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import com.bank.account.domain.Account;
-import com.bank.account.domain.Transaction;
-import com.bank.account.exception.AccountNotFoundException;
-import com.bank.account.service.AccountService;
-import com.bank.account.service.TransactionFeign;
+import com.jordantanjunwen.account.domain.Account;
+import com.jordantanjunwen.account.domain.Transaction;
+import com.jordantanjunwen.account.exception.AccountNotFoundException;
+import com.jordantanjunwen.account.service.AccountService;
+import com.jordantanjunwen.account.service.TransactionFeign;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 import lombok.extern.slf4j.Slf4j;

@@ -14,8 +14,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.bank.account.domain.Account;
-import com.bank.account.domain.AccountType;
+import com.jordantanjunwen.account.domain.Account;
+import com.jordantanjunwen.account.domain.AccountType;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -9,13 +9,13 @@ import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.bank.user.domain.Account;
-import com.bank.user.domain.Customer;
-import com.bank.user.entity.CustomerEntity;
-import com.bank.user.exception.UserNotFoundException;
-import com.bank.user.repository.CustomerRepository;
-import com.bank.user.service.AccountFeign;
-import com.bank.user.service.CustomerService;
+import com.jordantanjunwen.user.domain.Account;
+import com.jordantanjunwen.user.domain.Customer;
+import com.jordantanjunwen.user.entity.CustomerEntity;
+import com.jordantanjunwen.user.exception.UserNotFoundException;
+import com.jordantanjunwen.user.repository.CustomerRepository;
+import com.jordantanjunwen.user.service.AccountFeign;
+import com.jordantanjunwen.user.service.CustomerService;
 
 @Service
 @RefreshScope(proxyMode = ScopedProxyMode.NO)

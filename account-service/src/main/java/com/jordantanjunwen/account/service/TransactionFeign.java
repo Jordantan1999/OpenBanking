@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.bank.account.domain.Transaction;
+import com.jordantanjunwen.account.domain.Transaction;
 
 @FeignClient("TransactionService")
 public interface TransactionFeign {

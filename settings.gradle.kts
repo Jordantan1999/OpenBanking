@@ -10,4 +10,4 @@
 
 rootProject.name = "OpenBanking"
 
-include ("eureka","account-service","config-server","transaction-service","user-service","zuul-gateway")
+include ("discovery-server","account-service","config-server","transaction-service","user-service","zuul-gateway")
