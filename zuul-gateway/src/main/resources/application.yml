@@ -1,3 +1,12 @@
+spring:
+  application:
+    name: ZuulServer
+  cloud:
+    config:
+      failFast: true
+  config:
+    import: optional:configserver:http://localhost:1111
+
 server:
   port: 9000
     

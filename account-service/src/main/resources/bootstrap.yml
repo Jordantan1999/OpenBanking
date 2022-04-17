@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: AccountService
-  cloud:
-    config:
-      uri: http://localhost:1111
-      failFast: true
-#  config:
-#    import: optional:configserver:http://localhost:1111
